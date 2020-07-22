@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>Hello World</title>
+    </head>
+<body>
+
+    <div id="app">
+        <counter></counter>
+        <counter></counter>
+        <counter></counter>
+    </div>
+
+    <script>
+        // var vm = new Vue({
+        // el: "#app",
+        // })
+        Vue.component('counter',
+        {
+            data: function(){
+                return {
+                    count: 0
+                }
+            },
+            template : '<button @click="count++">{{count}}</button>'
+        })
+        new Vue({
+            el: "#app",
+        })
+    </script>
+</body>
+</html>

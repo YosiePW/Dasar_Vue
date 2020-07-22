@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>Hello World</title>
+    </head>
+<body>
+
+    <div id="app">
+        <a v-bind:href="url">{{url}}</a>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                "url" : "https://smktelkom-mlg.sch.id/"
+            }
+        })
+    </script>
+</body>
+</html>
